@@ -1,7 +1,7 @@
 import boto.ec2
 import yaml 
 
-conn=boto.ec2.connect_to_region("eu-west-1")
+conn=boto.ec2.connect_to_region("us-west-1")
 reservations = conn.get_all_instances()
 for res in reservations:
     for inst in res.instances:
